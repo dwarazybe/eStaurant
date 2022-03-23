@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="eStaurant" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/eStaurant" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="D:/WxWidgets/lib/gcc_dll/mswud" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="D:/WxWidgets/lib/gcc_dll/mswud" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add library="libwxmsw30ud_core.a" />
+					<Add library="libwxbase30ud.a" />
+					<Add library="libwxpngd.a" />
+					<Add library="libwxzlibd.a" />
+					<Add library="libwxmsw30ud_adv.a" />
+					<Add directory="D:/WxWidgets/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/eStaurant" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="D:/WxWidgets/lib/gcc_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="D:/WxWidgets/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static" />
+					<Add library="libwxmsw30u_core.a" />
+					<Add library="libwxbase30u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxmsw30u_adv.a" />
+					<Add directory="D:/WxWidgets/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-finput-charset=utf-8" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add directory="D:/WxWidgets/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="D:/WxWidgets/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="Archive_Dialog.cpp" />
+		<Unit filename="Archive_Dialog.h" />
+		<Unit filename="Customers_Dialog.cpp" />
+		<Unit filename="Customers_Dialog.h" />
+		<Unit filename="Info_Dialog.cpp" />
+		<Unit filename="Info_Dialog.h" />
+		<Unit filename="Menu_Dialog.cpp" />
+		<Unit filename="Menu_Dialog.h" />
+		<Unit filename="eStaurantApp.cpp" />
+		<Unit filename="eStaurantApp.h" />
+		<Unit filename="eStaurantMain.cpp" />
+		<Unit filename="eStaurantMain.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="version.h" />
+		<Unit filename="wxsmith/Archive_Dialog.wxs" />
+		<Unit filename="wxsmith/Customers_Dialog.wxs" />
+		<Unit filename="wxsmith/Info_Dialog.wxs" />
+		<Unit filename="wxsmith/Menu_Dialog.wxs" />
+		<Unit filename="wxsmith/eStaurantframe.wxs" />
+		<Extensions>
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="10" />
+				<Settings autoincrement="1" date_declarations="1" use_define="0" update_manifest="0" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project output_directory="docs" output_language="Polish" />
+				<doxyfile_build extract_all="1" extract_private="1" extract_static="1" />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<lib_finder disable_auto="1" />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="eStaurantApp.cpp" main="eStaurantFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/eStaurantframe.wxs" src="eStaurantMain.cpp" hdr="eStaurantMain.h" fwddecl="0" i18n="1" name="eStaurantFrame" language="CPP" />
+					<wxDialog wxs="wxsmith/Menu_Dialog.wxs" src="Menu_Dialog.cpp" hdr="Menu_Dialog.h" fwddecl="0" i18n="1" name="Menu_Dialog" language="CPP" />
+					<wxDialog wxs="wxsmith/Customers_Dialog.wxs" src="Customers_Dialog.cpp" hdr="Customers_Dialog.h" fwddecl="0" i18n="1" name="Customers_Dialog" language="CPP" />
+					<wxDialog wxs="wxsmith/Archive_Dialog.wxs" src="Archive_Dialog.cpp" hdr="Archive_Dialog.h" fwddecl="0" i18n="1" name="Archive_Dialog" language="CPP" />
+					<wxDialog wxs="wxsmith/Info_Dialog.wxs" src="Info_Dialog.cpp" hdr="Info_Dialog.h" fwddecl="0" i18n="1" name="Info_Dialog" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
